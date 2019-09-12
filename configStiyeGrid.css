@@ -1,0 +1,43 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color:rgb(143, 238, 245); 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 15vh 80vh 80vh;
+  grid-gap: 5px;
+}
+
+header{
+  background: rgb(231, 144, 44);
+  grid-column:1/4;
+  grid-row: 1/2;
+
+}
+main{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+nav{
+  background-color: rgb(87, 87, 243);
+  grid-column: 1/2;
+  grid-row: 2/3
+}
+aside{
+  background:green;
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+footer{
+  background: grey;
+  grid-column: 1/4;
+  grid-row: 3/4;
+}
